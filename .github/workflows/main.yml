@@ -1,4 +1,4 @@
-name: Node.js CI and Docker Build
+name: Node.js CI and Docker
 
 on:
   push:
