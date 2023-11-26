@@ -31,7 +31,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: your-docker-username/your-docker-repo-name:latest
+        tags: airampik/my_app:latest
         build-args: SHA=${{ github.sha }}
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
