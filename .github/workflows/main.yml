@@ -28,6 +28,6 @@ jobs:
         push: true
         tags: your-docker-username/your-docker-repo-name:latest
         build-args: SHA=${{ github.sha }}
-    env:
-      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_TOKEN }}
