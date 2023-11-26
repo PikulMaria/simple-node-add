@@ -21,6 +21,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Сброс кэша Docker
+      run: |
+        docker logout
+        docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_TOKEN }}
+
     - name: Сборка и отправка Docker-образа
       uses: docker/build-push-action@v4
       with:
