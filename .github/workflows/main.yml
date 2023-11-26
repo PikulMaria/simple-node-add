@@ -3,7 +3,7 @@ name: Node.js CI and Docker Build
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy-docker:
